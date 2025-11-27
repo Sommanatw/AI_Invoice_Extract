@@ -1,13 +1,14 @@
 @echo off
 
 echo Python Virtual Environment...
-python -m venv env
+cd D:\AI_Invoice_Extract
+call python -m venv env
 echo Python Virtual Environment... Created.
 echo Activating Virtual Environment...
-call env\Scripts\activate.bat
+call D:\AI_Invoice_Extract\env\Scripts\activate.bat
 echo Virtual Environment Activated.
 echo Installing Required Packages...
-pip install -r requirements.txt
+call python -m pip install -r D:\AI_Invoice_Extract\requirements.txt
 echo Required Packages Installed.
 
 
